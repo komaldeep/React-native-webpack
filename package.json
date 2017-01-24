@@ -10,7 +10,9 @@
     "build-ios": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.ios.js --bundle-output iOS/main.jsbundle --platform \"ios\" --assets-dest ./  --dev false --reset-cache",
     "build-android": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.android.js --bundle-output iOS/main.jsbundle --platform \"android\" --assets-dest ./  --dev false --reset-cache",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
-    "android": "node node_modules/react-native/local-cli/cli.js run-android"
+    "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
   },
   "dependencies": {
     "immutable": "^3.8.1",
@@ -31,4 +33,5 @@
     "eslint-plugin-react": "^4.3.0",
     "remote-redux-devtools": "^0.1.6"
   }
+
 }

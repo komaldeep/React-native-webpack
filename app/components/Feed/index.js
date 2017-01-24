@@ -1,9 +1,3 @@
-/*
-*
-* Feed
-*
-*/
-
 import { View, Platform, NavigationExperimental,
 	TouchableHighlight, Text } from 'react-native';
 import React, { Component } from 'react';
