@@ -1,9 +1,3 @@
-/*
- *
- * GlobalNavigation
- *
- */
-
 import { View, NavigationExperimental } from 'react-native';
 import React, { Component } from 'react';
 import styles from './styles';
@@ -26,6 +20,7 @@ class GlobalNavigation extends Component {
 
 		this._renderHeader = this._renderHeader.bind(this);
 		this._renderScene = this._renderScene.bind(this);
+
 	}
 
 	render() {
@@ -59,13 +54,14 @@ class GlobalNavigation extends Component {
 	}
 
 	_renderHeader(props) {
-    return null;
-  }
+       return null;
+     }
 
 	_onCloseNewItem() {
     const { dispatch, navigation } = this.props;
     dispatch(popRoute(navigation.key));
 	}
+
 }
 
 function mapDispatchToProps(dispatch) {

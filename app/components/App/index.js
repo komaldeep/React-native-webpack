@@ -1,8 +1,3 @@
-/*
- *
- * App
- *
- */
 
 import { View } from 'react-native';
 import React, { Component } from 'react';

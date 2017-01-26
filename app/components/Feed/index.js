@@ -46,7 +46,7 @@ class Feed extends Component {
 
 	_renderHeader(props) {
 		const showHeader = props.scene.route.title &&
-			(Platform.OS === 'ios' || props.scene.route.key === 'details');
+			(props.scene.route.key === 'details');
 
 		if (showHeader) {
 			return (

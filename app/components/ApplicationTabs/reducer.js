@@ -7,12 +7,14 @@ const simpleIcon = {
 
 const tabs = {
   routes: [
-    { key: 'feed', icon: simpleIcon, title: 'Items' },
-    { key: 'notifications', icon: simpleIcon, title: 'Notifications' },
-    { key: 'settings', icon: simpleIcon, title: 'Settings' }
+      { key: 'feed', icon: simpleIcon, title: 'Items' },
+      { key: 'notifications', icon: simpleIcon, title: 'Notifications' },
+      { key: 'settings', icon: simpleIcon, title: 'Settings' },
+      { key: 'Example', icon: simpleIcon, title: 'Example' }
   ],
   key: 'ApplicationTabs',
   index: 0
 };
 
 module.exports = tabReducer(tabs);
+

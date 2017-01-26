@@ -44,6 +44,12 @@ const data = [
 		title: 'Hello7',
 		description: 'Description 7',
 	}
+    ,
+    {
+        key: '8',
+        title: 'Hello8',
+        description: 'Description 7',
+    }
 ].map(d => Object.assign(d, {
 	image: {uri: 'http://facebook.github.io/react/img/logo_og.png'}
 }));
@@ -68,7 +74,7 @@ class Items extends Component {
 			</View>
 		);
 		return (
-			<ScrollView automaticallyAdjustContentInsets={false}>
+			<ScrollView automaticallyAdjustContentInsets={true}>
 				{data.map(generateItem)}
 			</ScrollView>
 		);

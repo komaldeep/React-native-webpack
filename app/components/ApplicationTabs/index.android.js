@@ -6,10 +6,12 @@ import styles from './styles';
 import Feed from '../Feed';
 import { connect } from 'react-redux';
 import { actions as navigationActions } from 'react-native-navigation-redux-helpers';
+import Example from './../Example/Example';
 
 const { jumpTo, pushRoute } = navigationActions;
 
 class ApplicationTabs extends Component {
+
 	_renderTabContent(tab) {
 		if (tab.key === 'feed') {
 			return (
@@ -28,6 +30,12 @@ class ApplicationTabs extends Component {
 				<View style={[styles.tabContent, {backgroundColor: 'pink'}]} />
 			);
 		}
+
+        if (tab.key === 'Example') {
+            return (
+               <Example/>
+            );
+        }
 	}
 
 	render() {
